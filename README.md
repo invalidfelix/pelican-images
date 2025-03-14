@@ -12,6 +12,7 @@ Docker images for Pelican, created on top of images from [Parkervcp](https://git
     echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
    ```
    3. Navigate to the directory of the Dockerfile and build the image. The image should now show up in `Docker Desktop`.
+      Make sure that line separators are set to `LF` for `entrypoint.sh`.Navigate to the directory of the Dockerfile and build the image. The image should now show up in `Docker Desktop`.
       ```
       docker build -t ghcr.io/USERNAME/IMAGE:TAG .
       ```
